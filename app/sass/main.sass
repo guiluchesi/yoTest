@@ -1,0 +1,124 @@
+$pink: #FF8A7F
+$gray: #2B2F38
+
+body
+	background-color: #fbfbfb
+	font-family: 'Lato', sans-serif
+	font-size: 18px
+	padding-bottom: 12px
+
+.footer
+	width: 100%
+	text-align: center
+	.itens
+		@media (max-width: 991px)
+			margin: 20px 0
+		&:after
+			content: ''
+			display: block
+			width: 1px
+			height: 26px
+			background-color: #fff
+			position: relative
+			right: -50%
+			top: 12px
+			@media (max-width: 991px)
+				display: none
+	a
+		color: #fff
+		text-decoration: none
+		padding: 13px 20px
+		border-radius: 25px
+		border: 1px solid #fff
+		&:hover
+			background-color: rgba(255,255,255,0.25)
+
+.body
+	background-color: #fff
+	margin-bottom: 40px
+	.row
+		p, figure
+			margin: 50px 0
+	h1
+		text-align: center
+		margin: 60px 0 30px
+
+
+.bg-blue
+	background: url('../img/grandientbg.jpg')
+	background-repeat: no-repeat
+	background-size: cover
+
+.header
+	height: 120px
+	text-align: center
+	.fa
+		color: #fff
+		font-weight: bold
+		font-size: 3em
+		margin-top: 30px
+
+.me
+	padding: 125px 0
+	text-align: center
+	figure
+		margin-bottom: 40px
+	h1
+		text-transform: uppercase
+		font-weight: 900
+		color: #fff
+		font-size: 30px
+		position: relative
+		bottom: 30px
+	#face
+		display: flex
+		@media (max-width: 768px) 
+			display: block
+			width: 70%
+			margin: 0 auto
+	.ballon
+		display: none
+		a
+			background-color: #fff
+			padding: 20px 30px
+			border-radius: 15px
+			position: relative
+			left: 210px
+			top: 330px
+			z-index: 2
+			color: #404040
+			text-decoration: none
+
+form
+	margin-bottom: 60px
+	color: #555
+
+form input[type=text], form input[type=email], form textarea
+	width: 100%
+	margin: 10px 0
+	padding: 7px 14px
+	resize: none
+	border: 1px solid #808080
+	border-radius: 4px
+
+form input[type=radio]
+	margin: 15px 5px 15px 10px
+
+@keyframes blinkLeft2
+	90%
+		transform: none
+		animation-timing-function: ease-in
+	93%
+		tranform: translateY(15px) scaleY(0)
+	100%
+		animation-timing-function: ease-out
+
+@keyframes blinkLeft
+	0%, 10%, 100%
+		transform: scaleY(1)
+	5%
+		transform: scaleY(0.2)
+
+.eyes
+	animation: blinkLeft 3.5s 1s infinite
+	transform-origin: 0px 380px

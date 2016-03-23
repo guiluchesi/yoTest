@@ -1,0 +1,250 @@
+/* line 7, ../sass/main.sass */
+body {
+  background-color: #fbfbfb;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+}
+
+/* line 12, ../sass/main.sass */
+.bg-pink {
+  background-color: #FF8A7F;
+  color: #444;
+}
+
+/* line 17, ../sass/main.sass */
+.bg-gray {
+  background-color: #2B2F38;
+  color: #fff;
+}
+
+/* line 22, ../sass/main.sass */
+.fontzero {
+  font-size: 0em !important;
+}
+
+/* line 26, ../sass/main.sass */
+.myname {
+  margin: 170px 0;
+  text-align: center;
+}
+/* line 29, ../sass/main.sass */
+.myname figure {
+  margin-bottom: 40px;
+}
+/* line 31, ../sass/main.sass */
+.myname h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #fff;
+  font-size: 30px;
+}
+
+/* line 37, ../sass/main.sass */
+#mynameSmall {
+  margin: 90px 0;
+  text-align: center;
+}
+/* line 40, ../sass/main.sass */
+#mynameSmall figure {
+  margin-bottom: 40px;
+}
+/* line 42, ../sass/main.sass */
+#mynameSmall .lead {
+  font-size: 25px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/* line 47, ../sass/main.sass */
+#resumo, #edai, #harry, #novoMelhor, #casaArrumada, #target {
+  margin: 80px 0;
+}
+
+/* line 50, ../sass/main.sass */
+#ireland {
+  margin: 90px 0 0 0;
+}
+
+/* line 54, ../sass/main.sass */
+#resumo p {
+  margin: 0 0 30px;
+}
+/* line 56, ../sass/main.sass */
+#resumo p:last-child {
+  margin-bottom: 80px;
+}
+
+/* line 59, ../sass/main.sass */
+.habilidades {
+  padding: 0;
+  margin: 0;
+}
+/* line 62, ../sass/main.sass */
+.habilidades li {
+  display: inline-block;
+}
+/* line 64, ../sass/main.sass */
+.habilidades li:first-child, .habilidades li:nth-child(4) {
+  margin-left: 0;
+}
+/* line 66, ../sass/main.sass */
+.habilidades li:last-child, .habilidades li:nth-child(3) {
+  margin-right: 0;
+}
+@media (min-width: 992px) {
+  /* line 69, ../sass/main.sass */
+  .habilidades li:nth-child(-n+3) {
+    margin-bottom: 20px;
+  }
+  /* line 71, ../sass/main.sass */
+  .habilidades li:nth-child(n+4) {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 74, ../sass/main.sass */
+  .habilidades li:nth-child(-n+3) {
+    margin-top: 12px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 77, ../sass/main.sass */
+  .habilidades li:nth-child(-n+3) {
+    margin-bottom: 20px;
+  }
+  /* line 79, ../sass/main.sass */
+  .habilidades li:nth-child(n+4) {
+    margin-top: 20px;
+  }
+}
+
+/* line 84, ../sass/main.sass */
+#edai .lead {
+  font-weight: 900;
+}
+
+/* line 88, ../sass/main.sass */
+#harry p.balao {
+  background-color: #2b2f38;
+  color: #b4e9fc;
+  width: 90%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+/* line 95, ../sass/main.sass */
+#harry p.balao:before {
+  content: "";
+  position: absolute;
+  border: 0 solid transparent;
+  border-top: 10px solid #2b2f38;
+  border-radius: 0 20px 0 0;
+  top: 70px;
+  left: 22px;
+  width: 22px;
+  height: 17px;
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+/* line 106, ../sass/main.sass */
+#harry p:nth-child(2) {
+  margin-top: 35px;
+}
+
+@keyframes shine {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  30% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+}
+@keyframes movepaLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+}
+@keyframes movepaRight {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg) scale(0.8);
+  }
+}
+@keyframes movepaLeftBack {
+  0% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+  100% {
+    transform: rotate(0) scale(1);
+  }
+}
+@keyframes movepaRightBack {
+  0% {
+    transform: rotate(45deg) scale(0.8);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+@keyframes blinkLeft2 {
+  90% {
+    transform: none;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    tranform: translateY(15px) scaleY(0);
+  }
+  100% {
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes blinkLeft {
+  0%, 10%, 100% {
+    transform: scaleY(1);
+  }
+  5% {
+    transform: scaleY(0.2);
+  }
+}
+/* line 156, ../sass/main.sass */
+#shine1 {
+  animation: shine 2s infinite;
+  transform-origin: 160px 85px;
+}
+
+/* line 160, ../sass/main.sass */
+#shine2 {
+  animation: shine 2s 1s infinite;
+  transform-origin: 230px 155px;
+}
+
+/* line 164, ../sass/main.sass */
+#shine3 {
+  animation: shine 2s 0.5s infinite;
+  transform-origin: 160px 200px;
+}
+
+/* line 168, ../sass/main.sass */
+#paEsquerda {
+  transform-origin: 61px 254px;
+}
+
+/* line 171, ../sass/main.sass */
+#paDireita {
+  transform-origin: 221px 257px;
+}
+
+/* line 174, ../sass/main.sass */
+.eyes {
+  animation: blinkLeft 4s 2s infinite;
+  transform-origin: 0px 380px;
+}

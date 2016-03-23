@@ -1,293 +1,39 @@
 <!doctype html>
-<html lang="">
+<html lang="pt-br" ng-app="guilhermeApp">
   <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>yoTest</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Guilherme Luchesi - Front End Developer</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
+      <link href='https://fonts.googleapis.com/css?family=Lato:400,300,900' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/main.css">
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
-
-    <!-- endbuild -->
-    
+      <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
-  <body>
-    <!--[if lt IE 10]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    
-      <header class="header">
-        <div class="container">
+  <body class="bg-blue">
+    <div ng-view></div>
+
+    <footer class="footer">
+      <div class="container">
           <div class="row">
-            <div class="col-sm-12 overflow">
-              <div class="social-icons pull-right">
-                <ul class="nav nav-pills">
-                  <li class="fa fa-facebook"></li>
-                  <li class="fa fa-twitter"></li>
-                  <li class="fa fa-google-plus"></li>
-                  <li class="fa fa-dribbble"></li>
-                  <li class="fa fa-linkedin"></li>
-                </ul>
-              </div>
-            </div> <!-- / .SM 12 -->
-          </div> <!-- / .ROW -->
-
-          <div class="row">
-            <div class="navbar">
-            <!-- <div class="container"> -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <figure class="logo navbar-brand">
-                  <a href="#"><img src="images/logo.png" alt=""></img></a>
-                </figure>
-              </div> <!--  / .header -->
-
-              <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Portifolio</a></li>
-                <li><a href="#">Shortcodes</a></li>
-              </ul>
-            </div> <!-- / .NAVBAR -->
-
-            <div class="search">
-              <form role="form">
-                  <i class="fa fa-search"></i>
-                  <div class="field-toggle" style="display: none;">
-                      <input type="text" class="search-form" autocomplete="off" placeholder="Search">
-                  </div>
-              </form>
-            </div>
+              <div class="col-md-3 col-xs-6 itens"><a href="#/site">Site</a></div>
+              <div class="col-md-3 col-xs-6 itens"><a href="#/loja">Loja</a></div>
+              <div class="col-md-3 col-xs-6 itens"><a href="#/outros">Outros</a></div>
+              <div class="col-md-3 col-xs-6 itens"><a href="#/naosei">Não sei</a></div>
           </div>
+      </div>
+    </footer>
 
-        </div>  <!-- / .CONTAINER -->
-      </header>
-
-      <section id='main' class="container-fluid">
-        <div class="container">
-            <div class="row">
-              <div class="slide">
-                <div class="col-md-5 mainInfo">
-                    <h1>We Are Creative Nerds</h1>
-                    <p>Boudin doner frankfurter pig. Cow shank bresaola pork loin tri-tip tongue venison pork belly meatloaf short loin landjaeger biltong beef ribs shankle chicken andouille.</p>
-                    <a class="btn btn-common" href="#">Sign up</a>
-                </div>
-
-                <img src="images/home/slider/hill.png" class="hill"></img>
-                <img src="images/home/slider/house.png" class="casa"></img>
-                <img src="images/home/slider/sun.png" class="sol"></img>
-                <img src="images/home/slider/birds1.png" class="bird1"></img>
-                <img src="images/home/slider/birds2.png" class="bird2"></img>
-              </div>
-            </div>
-        </div>
-      </section>
-
-      <section id="features" class="container">
-        <div class="col-md-4 feature">
-          <figure><img src="images/home/icon1.png" alt=""></figure>
-          <h3>Incredibly Responsive</h3>
-          <p>Ground round tenderloin flank shank ribeye. Hamkevin meatball swine. Cow shankle beef sirloin chicken ground round.</p>
-        </div>
-        <div class="col-md-4 feature">
-          <figure><img src="images/home/icon2.png" alt=""></figure>
-          <h3>Superior Typography</h3>
-          <p>Hamburger ribeye drumstick turkey, strip steak sausage ground round shank pastrami beef brisket pancetta venison.</p>
-        </div>
-        <div class="col-md-4 feature">
-          <figure><img src="images/home/icon3.png" alt=""></figure>
-          <h3>Swift Page Builder</h3>
-          <p>Venison tongue, salami corned beef ball tip meatloaf bacon. Fatback pork belly bresaola tenderloin bone pork kevin shankle.</p>
-        </div>
-      </section>
-
-      <section id="tour" class="container-fluid">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <h4>Triangle Corporate Template</h4>
-              <p>A responsive, retina-ready & wide multipurpose template.</p>
-            </div>
-            <div class="col-md-6">
-              <div class="aviao"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="container">
-        <div class="row company">
-          <div class="col-md-5">
-            <figure><img src="images/home/image1.png" alt=""></figure>
-          </div>
-          <div class="col-md-6 companyText">
-            <h4>Experienced and Enthusiastic</h4>
-            <p>Pork belly leberkas cow short ribs capicola pork loin. Doner fatback frankfurter jerky meatball pastrami bacon tail sausage. Turkey fatback ball tip, tri-tip tenderloin drumstick salami strip steak.</p>
-          </div>
-        </div>
-        <div class="row company">
-          <div class="col-md-6 companyText">
-            <h4>Built for the Responsive Web</h4>
-            <p>Mollit eiusmod id chuck turducken laboris meatloaf pork loin tenderloin swine. Pancetta excepteur fugiat strip steak tri-tip. Swine salami eiusmod sint, ex id venison non. Fugiat ea jowl cillum meatloaf.</p>
-          </div>
-          <div class="col-md-5">
-            <figure><img src="images/home/image2.png" alt=""></figure>
-          </div>
-        </div>
-        <div class="row company">
-          <div class="col-md-5">
-            <figure><img src="images/home/image3.png" alt=""></figure>
-          </div>
-          <div class="col-md-6 companyText">
-            <h4>Experienced and Enthusiastic</h4>
-            <p>To avoid duties cupidatat anim excepteur cillum that blacks rump pork chop time. That tenderloin pardon revenue. Shankle aliquip short ribs, chicken exercises of this kind shank landjaeger spare ribs corned beef.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="clients" class="container">
-        <div class="row">
-          <figure><img src="images/home/clients.png" alt=""></figure>
-          <h3>Happy Clients</h3>
-          <p>Tempor ut labore et dolore magna aliqua eiusmod and vitality, I grant you. <br> Over the years come, who nostrud</p>
-        </div>
-        <div class="row">
-          <ul class="clientsList">
-            <li class="clientLogo">
-              <figure><img src="images/home/client1.png" alt=""></figure>
-            </li>
-            <li class="clientLogo">
-              <figure><img src="images/home/client2.png" alt=""></figure>
-            </li>
-            <li class="clientLogo">
-              <figure><img src="images/home/client3.png" alt=""></figure>
-            </li>
-            <li class="clientLogo">
-              <figure><img src="images/home/client4.png" alt=""></figure>
-            </li>
-            <li class="clientLogo">
-              <figure><img src="images/home/client5.png" alt=""></figure>
-            </li>
-            <li class="clientLogo">
-              <figure><img src="images/home/client6.png" alt=""></figure>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <footer class="footer container-fluid">
-        <section class="container">
-          <figure class='footerSeparator'>
-            <img src="images/home/under.png" alt="">
-          </figure>
-          <div class="col-md-4">
-            <h4>Testimonial</h4>
-            <div class="testimonial">
-              <div class="media">
-                <figure class="pull-left">
-                    <a href="#"><img src="images/home/profile1.png" alt=""></a>
-                </figure>
-                <div class="media-body">
-                    <blockquote>
-                      <font class="">Unless advantage bresaola, leberkas venison occaecat bacon blacks labor tail.</font>
-                    </blockquote>
-                    <h3><a href="#"><font>- Jhon Kalis</font></a></h3>
-                </div>
-             </div>
-            </div>
-            <div class="testimonial">
-              <div class="media">
-                  <div class="pull-left">
-                      <a href="#"><img src="images/home/profile2.png" alt=""></a>
-                  </div>
-                  <div class="media-body">
-                      <blockquote>
-                        <font class="">Capicola flank but wonder if there are some rump pancetta leberkas venison occaecat.</font>
-                      </blockquote>
-                      <h3><a href=""><font>- Abraham Josef</font></a></h3>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <h4>Contacts</h4>
-            <ul class="contact">
-              <li>E-mail: <a href="#">email@email.com</a></li>
-              <li>Phone: +1 (123) 456 7890 </li>
-              <li>Fax: +1 (123) 456 7891</li>
-            </ul>
-            <h4>Address</h4>
-            <ul class="address">
-              <li>Unit C2, St.Vincent's Trading Est., </li>
-              <li>Feeder Road,</li>
-              <li>Bristol, BS2 0UY</li>
-              <li>United Kingdom</li>
-            </ul>
-          </div>
-          <div id="contactForm" class="col-md-5">
-            <h4>Send a message</h4>
-            <form action="">
-              <label class="sr-only" for="name">Name</label>
-              <input type="text" name="Name" class="type" placeholder="Name">
-              <label class="sr-only" for="email">E-mail</label>
-              <input type="email" name='email' class="type" placeholder="E-mail">
-              <label class="sr-only" for="message">Your text here</label>
-              <textarea name="message">Your text here</textarea>
-              <input type="submit" name="submit" class="btn btn-submit" value="Submit">
-            </form>
-          </div>
-        </section>
-      </footer>
-    
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
-
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-    
-    <!-- build:js scripts/plugins.js -->
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
-    <!-- endbuild -->
-    
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
